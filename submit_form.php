@@ -17,10 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $messageSent = mail($to, $subject, $email_content, $headers);
 
     if ($messageSent) {
-        header('Location: submit_thanks.php');
+        header('Location: submit_thanks.html');
         exit;
     } else {
-        header('Location: submit_error.php');
+        header('Location: submit_error.html');
         exit;
     }
 }
