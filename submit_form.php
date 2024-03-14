@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $message = strip_tags(trim($_POST["message"]));
 
-    $to = "???@???.com";
+    $to = "stem4agri@proton.me";
 
     $subject = "STEM4Agri";
 
